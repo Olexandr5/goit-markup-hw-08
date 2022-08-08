@@ -1,0 +1,27 @@
+.features {
+  & {
+    @extend %section;
+    padding-bottom: 0;
+  }
+  &-item__svg {
+    background-color: #f5f4fa;
+    padding: 25px 100px;
+    @extend %reset-list;
+  }
+  &-list__svg {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    flex-basis: 270px;
+    @extend %reset-list;
+  }
+  &__title--position {
+    margin-bottom: 10px;
+  }
+}

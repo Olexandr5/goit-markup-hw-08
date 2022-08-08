@@ -1,0 +1,42 @@
+.nav {
+  &__link--current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+  &__link--position {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__link--currentp::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 84px;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    @extend %reset-list;
+  }
+
+  &__list :hover,
+  &__list :focus {
+    color: var(--logo-text);
+  }
+}

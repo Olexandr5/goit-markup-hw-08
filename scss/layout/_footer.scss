@@ -1,0 +1,52 @@
+.footer {
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  & {
+    padding: 60px 0;
+
+    background-color: #2f303a;
+  }
+  &__adress {
+    margin-right: 80px;
+  }
+  &__addres--position {
+    margin-top: 20px;
+  }
+  &__list {
+    margin-top: 9px;
+    @extend %reset-list;
+  }
+  &__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  &__social {
+    margin-right: auto;
+  }
+  &__social .social__svg {
+    fill: var(--logo-footer);
+  }
+  &__mail {
+    padding: 0 16px;
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: #2f303a;
+  }
+  &__label {
+    display: inline-block;
+    margin-right: 12px;
+  }
+  &__btn-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+
+    fill: currentColor;
+  }
+}
