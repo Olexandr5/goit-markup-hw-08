@@ -1,4 +1,19 @@
 .nav {
+  &__btn {
+    @media screen and (min-width: 480px) {
+      background-color: transparent;
+
+      display: inline-flex;
+      cursor: pointer;
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
   &__link--current::after {
     content: '';
     position: absolute;
@@ -11,9 +26,17 @@
     border-radius: 2px;
   }
   &__link--position {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+      padding: 32px 0;
+      position: relative;
+    }
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__link--currentp::after {
@@ -29,14 +52,26 @@
   }
 
   &__list {
-    list-style: none;
-    display: flex;
-    gap: 50px;
     @extend %reset-list;
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
+    }
   }
 
   &__list :hover,
   &__list :focus {
     color: var(--logo-text);
+  }
+  &__btn:hover,
+  &__btn:focus {
+    fill: var(--logo-text);
   }
 }
