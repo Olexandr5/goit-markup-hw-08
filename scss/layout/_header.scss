@@ -1,12 +1,9 @@
 .header {
   &__logo {
-    @media screen and (min-width: 480px) {
-      padding: 16px 0;
-      margin-right: auto;
-
-      display: flex;
-      align-items: center;
-    }
+    padding: 16px 0;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
     @media screen and (min-width: 768px) {
       padding: 26px 0;
       margin-right: 88px;
@@ -18,8 +15,6 @@
   }
 
   &__link--position {
-    @media screen and (min-width: 480px) {
-    }
     @media screen and (min-width: 768px) {
       display: block;
       margin-top: 10px;
@@ -35,9 +30,9 @@
 
   &__list {
     @extend %reset-list;
-    @media screen and (min-width: 480px) {
-      display: none;
-    }
+
+    display: none;
+
     @media screen and (min-width: 768px) {
       display: flex;
       margin-left: 84px;
@@ -52,8 +47,6 @@
   }
 
   &__icon {
-    @media screen and (min-width: 480px) {
-    }
     @media screen and (min-width: 768px) {
       margin-right: 6px;
       width: 14px;
@@ -79,10 +72,8 @@
     }
   }
   &__container {
-    @media screen and (min-width: 480px) {
-      display: flex;
-      align-items: center;
-    }
+    display: flex;
+    align-items: center;
     @media screen and (min-width: 768px) {
     }
     @media screen and (min-width: 1200px) {
@@ -91,8 +82,6 @@
     }
   }
   & {
-    @media screen and (min-width: 480px) {
-    }
     @media screen and (min-width: 768px) {
       border-bottom: 1px solid #ececec;
     }
