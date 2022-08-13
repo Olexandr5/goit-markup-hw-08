@@ -7,13 +7,17 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     @extend %reset-list;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
   &__icon {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     justify-content: center;
     align-items: center;
@@ -25,7 +29,16 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
   }
+
   &__icon:hover,
   &__icon:focus {
     fill: var(--logo-text);

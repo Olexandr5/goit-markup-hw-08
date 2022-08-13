@@ -10,7 +10,7 @@
   padding: 60px 0;
 }
 
-.work, .teams, .portfolio, .clients {
+.portfolio, .clients {
   padding: 94px 0;
 }
 
@@ -546,7 +546,7 @@ ul {
 .work__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -563,10 +563,16 @@ ul {
 
 .teams__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .teams__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 .teams__user {
   font-weight: 500;
@@ -659,16 +665,24 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .clients__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -681,6 +695,18 @@ ul {
   fill: #afb1b8;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__icon {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__icon {
+    width: 170px;
+    height: 92px;
+  }
 }
 .clients__icon:hover, .clients__icon:focus {
   fill: var(--logo-text);
@@ -708,7 +734,6 @@ ul {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__list-svg {
@@ -747,6 +772,11 @@ ul {
 }
 .features__desc--position {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__desc--position {
+    margin-bottom: 0;
+  }
 }
 
 .footer__container {
@@ -1025,9 +1055,44 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 60px;
 }
-.teams__title--position {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .teams__list {
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .teams__title--position {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teams__title--position {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .teams__img {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teams__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teams__img {
+    width: 270px;
+    height: 260px;
+  }
 }
 .teams__user--position {
   margin-bottom: 10px;
@@ -1046,10 +1111,16 @@ ul {
   background-color: var(--logo-footer);
 }
 .teams__wrapper {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 24px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 1200px) {
+  .teams__wrapper {
+    padding: 30px 0;
+  }
 }
 .teams__social {
   display: -webkit-box;
@@ -1087,6 +1158,15 @@ ul {
   border-radius: 50%;
 }
 
+.work {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-bottom: 94px;
+  }
+}
 .work__title--position {
   margin-bottom: 50px;
 }
