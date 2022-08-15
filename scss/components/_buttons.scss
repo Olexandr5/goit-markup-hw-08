@@ -96,8 +96,15 @@
   }
   &__list-btn {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
   &__list-btn :hover,
   &__list-btn :focus {

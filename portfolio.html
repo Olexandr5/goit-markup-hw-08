@@ -76,13 +76,13 @@
             <li class="portfolio__item portfolio__item-btn">
               <button class="portfolio__btn portfolio__btn-web" type="button">Веб-сайты</button>
             </li>
-            <li class="portfolio__item portfolio__item-btn">
+            <li class="portfolio__item portfolio__item-btn portfolio__item--btn-app">
               <button class="portfolio__btn portfolio__btn-app" type="button">Приложения</button>
             </li>
             <li class="portfolio__item portfolio__item-btn">
               <button class="portfolio__btn portfolio__btn-des" type="button">Дизайн</button>
             </li>
-            <li class="portfolio__item portfolio__item-btn">
+            <li class="portfolio__item portfolio__item-btn portfolio__item--btn-mar">
               <button class="portfolio__btn portfolio__btn-mar" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -95,12 +95,40 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img5-lg@1x.jpg 1x,
+                        ./images/portfolio/img1-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img1-md@1x.jpg 1x,
+                        ./images/portfolio/img1-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img1-sm@1x.jpg 1x,
+                        ./images/portfolio/img1-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -121,12 +149,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img2-lg@1x.jpg 1x,
+                        ./images/portfolio/img2-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img2-md@1x.jpg 1x,
+                        ./images/portfolio/img2-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img2-sm@1x.jpg 1x,
+                        ./images/portfolio/img2-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -134,7 +189,7 @@
                   </p>
                 </div>
                 <div class="portfolio-work__border">
-                  <h3 class="portfolio-work__title">Постер New Orlean vs Golden Star</h3>
+                  <h3 class="portfolio-work__title">Постер New Orlen vs Golden Star</h3>
                   <p class="portfolio-work__desc">Дизайн</p>
                 </div>
               </a>
@@ -147,12 +202,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img3-lg@1x.jpg 1x,
+                        ./images/portfolio/img3-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img3-md@1x.jpg 1x,
+                        ./images/portfolio/img3-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img3-sm@1x.jpg 1x,
+                        ./images/portfolio/img3-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -173,12 +255,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img4-lg@1x.jpg 1x,
+                        ./images/portfolio/img4-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img4-md@1x.jpg 1x,
+                        ./images/portfolio/img4-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img4-sm@1x.jpg 1x,
+                        ./images/portfolio/img4-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -199,12 +308,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img5-lg@1x.jpg 1x,
+                        ./images/portfolio/img5-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img5-md@1x.jpg 1x,
+                        ./images/portfolio/img5-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img5-sm@1x.jpg 1x,
+                        ./images/portfolio/img5-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img5.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -225,12 +361,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img6-lg@1x.jpg 1x,
+                        ./images/portfolio/img6-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img6-md@1x.jpg 1x,
+                        ./images/portfolio/img6-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img6-sm@1x.jpg 1x,
+                        ./images/portfolio/img6-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img6.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -251,12 +414,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img7-lg@1x.jpg 1x,
+                        ./images/portfolio/img7-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img7-md@1x.jpg 1x,
+                        ./images/portfolio/img7-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img7-sm@1x.jpg 1x,
+                        ./images/portfolio/img7-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img7.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -277,12 +467,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img8-lg@1x.jpg 1x,
+                        ./images/portfolio/img8-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img8-md@1x.jpg 1x,
+                        ./images/portfolio/img8-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img8-sm@1x.jpg 1x,
+                        ./images/portfolio/img8-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img8.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -303,12 +520,39 @@
                 rel="nofollow noopener noreferrer"
               >
                 <div class="portfolio-work__thumb">
-                  <img
-                    class="portfolio-work__img"
-                    src="./images/portfolio/img9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img9-lg@1x.jpg 1x,
+                        ./images/portfolio/img9-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img9-md@1x.jpg 1x,
+                        ./images/portfolio/img9-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img9-sm@1x.jpg 1x,
+                        ./images/portfolio/img9-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img9.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
                   <p class="portfolio-work__overley">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
