@@ -21,6 +21,83 @@
   <body data-page>
     <!-- header-section -->
     <header class="header">
+      <!-- mobile-menu -->
+      <div class="mobile-menu__overley" data-menu>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn" type="button" data-menu-close>
+            <svg class="mobile-menu__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list-nav">
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav mobile-menu__link-nav-accent" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-contact">
+            <li class="mobile-menu__list-contact-tel">
+              <a class="mobile-menu__link-contact-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__list-contact-mailto">
+              <a class="mobile-menu__link-contact-mailto" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-social">
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="container header__container">
         <a class="header__link-logo header__logo" href="./index.html"
           >Web<span class="header__logo-studio">Studio</span></a
@@ -39,7 +116,7 @@
               <a class="nav__link nav__link--position" href="#contacts">Контакты</a>
             </li>
           </ul>
-          <button type="button" class="nav__btn">
+          <button class="nav__btn" type="button" data-menu-open>
             <svg class="nav__icon" width="40px" height="40px">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -122,13 +199,6 @@
               </p>
             </li>
           </ul>
-
-          <!-- <ul class="features__list">
-            <li class="features__item"></li>
-            <li class="features__item"></li>
-            <li class="features__item"></li>
-            <li class="features__item"></li>
-          </ul> -->
         </div>
       </section>
       <!-- work-section -->
@@ -739,5 +809,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
