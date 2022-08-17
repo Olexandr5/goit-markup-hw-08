@@ -36,6 +36,8 @@ ul {
 .teams__img,
 .portfolio-work__img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero__btn {
@@ -119,9 +121,6 @@ ul {
   height: 38px;
   width: 130px;
 }
-.portfolio__list-btn {
-  gap: 8px;
-}
 .portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--logo-footer);
   background-color: var(--logo-text);
@@ -132,14 +131,18 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 40px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__list-btn {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -547,11 +550,9 @@ ul {
 .hero__title {
   color: var(--logo-footer);
   font-weight: 900;
-  text-align: center;
   font-size: 26px;
   line-height: 1.6153846154;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   text-transform: uppercase;
   text-align: center;
 }
@@ -810,6 +811,7 @@ ul {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__list-svg {
@@ -833,8 +835,14 @@ ul {
   display: -ms-flexbox;
   display: flex;
   background-color: #f5f4fa;
-  padding: 25px 190px;
+  height: 120px;
   margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .features__wrap {
@@ -844,14 +852,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .features__wrap {
     padding: 25px 100px;
-  }
-}
-.features__desc--position {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .features__desc--position {
-    margin-bottom: 0;
   }
 }
 
@@ -1090,20 +1090,13 @@ ul {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px) {
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .hero {
   padding: 118px 0;
-  min-width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -1145,9 +1138,11 @@ ul {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero-lg@2x.jpg);
   }
 }
+.hero__title-position {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 480px) {
   .hero__title-position {
-    margin-bottom: 30px;
     width: 360px;
     margin-left: auto;
     margin-right: auto;
@@ -1162,22 +1157,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .portfolio {
     padding: 94px 0;
-  }
-}
-.portfolio__item--btn-app {
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .portfolio__item--btn-app {
-    margin-right: 0;
-  }
-}
-.portfolio__item--btn-mar {
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .portfolio__item--btn-mar {
-    margin-right: 0;
   }
 }
 
@@ -1197,6 +1176,7 @@ ul {
 }
 .portfolio-work__link {
   color: currentColor;
+  display: block;
 }
 .portfolio-work__thumb {
   position: relative;
@@ -1209,8 +1189,8 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
-  font-size: 18px;
+  padding: 24px;
+  font-size: 14px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--logo-footer);
@@ -1222,11 +1202,17 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .portfolio-work__overley {
+    padding: 63px 24px;
+    font-size: 18px;
+  }
+}
 .portfolio-work__link:hover .portfolio-work__overley, .portfolio-work__link:focus .portfolio-work__overley {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-.portfolio-work__item.item:hover, .portfolio-work__item.item:focus {
+.portfolio-work__link:hover, .portfolio-work__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1262,6 +1248,11 @@ ul {
 .teams {
   background-color: #f5f4fa;
 }
+@media screen and (max-width: 1199px) {
+  .teams {
+    padding: 60px 0;
+  }
+}
 .teams__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1269,18 +1260,14 @@ ul {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .teams__list {
     padding-bottom: 94px;
   }
 }
-@media screen and (min-width: 480px) {
-  .teams__title--position {
-    padding-top: 60px;
-    margin-bottom: 30px;
-  }
+.teams__title--position {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .teams__title--position {
@@ -1479,11 +1466,16 @@ ul {
 }
 
 .mobile-menu {
-  margin-left: auto;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 48px 40px;
   width: 100%;
-  height: 796px;
+  height: 100%;
   position: relative;
   color: var(--logo-footer);
   opacity: 1;
@@ -1518,11 +1510,11 @@ ul {
 .mobile-menu__link-nav-accent {
   color: var(--logo-text);
 }
-.mobile-menu__item-nav {
+.mobile-menu__item-nav:not(:last-child) {
   margin-bottom: 32px;
 }
-.mobile-menu__item-nav:last-child {
-  margin-bottom: 306px;
+.mobile-menu__list-nav {
+  margin-bottom: auto;
 }
 .mobile-menu__link-contact-tel {
   margin-bottom: 32px;

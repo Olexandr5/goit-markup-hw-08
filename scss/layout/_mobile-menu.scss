@@ -19,11 +19,11 @@
 
 .mobile-menu {
   & {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
     padding: 48px 40px;
     width: 100%;
-    height: 796px;
+    height: 100%;
     position: relative;
     color: var(--logo-footer);
     opacity: 1;
@@ -70,12 +70,15 @@
   &__link-nav-accent {
     color: var(--logo-text);
   }
-  &__item-nav {
+  &__item-nav:not(:last-child) {
     margin-bottom: 32px;
   }
-  &__item-nav:last-child {
-    margin-bottom: 306px;
+  &__list-nav {
+    margin-bottom: auto;
   }
+  // &__item-nav:last-child {
+  //   margin-bottom: 306px;
+  // }
   &__link-contact-tel {
     margin-bottom: 32px;
 

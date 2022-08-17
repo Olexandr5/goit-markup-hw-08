@@ -85,10 +85,6 @@
     height: 38px;
     width: 130px;
   }
-  &__list-btn {
-    gap: 8px;
-    @extend %reset-list;
-  }
   &__btn:hover,
   &__btn:focus {
     color: var(--logo-footer);
@@ -97,10 +93,14 @@
   &__list-btn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 40px;
+    row-gap: 15px;
+    column-gap: 8px;
+    @extend %reset-list;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
+      justify-content: center;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;

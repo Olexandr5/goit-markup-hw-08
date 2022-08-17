@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 
     @media screen and (min-width: 768px) {
       gap: 30px;
@@ -35,8 +36,10 @@
     border-radius: 4px;
     display: flex;
     background-color: #f5f4fa;
-    padding: 25px 190px;
+    height: 120px;
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
       padding: 25px 142px;
@@ -45,10 +48,10 @@
       padding: 25px 100px;
     }
   }
-  &__desc--position {
-    margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
+  // &__desc--position {
+  //   margin-bottom: 30px;
+  //   @media screen and (min-width: 768px) {
+  //     margin-bottom: 0;
+  //   }
+  // }
 }
